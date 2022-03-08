@@ -1,0 +1,82 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 10px;
+  
+}
+
+.prodotto{
+  width: calc(100% / 3);
+  display: inline-block;
+  padding:15px;
+}
+
+.img-prodotto{
+  position: relative;
+}
+
+.img-prodotto img{
+  width: 100%;
+}
+
+.seconda-img{
+  display: none;
+}
+.img-prodotto:hover .prima-img{
+  display: none;
+}
+.img-prodotto:hover .seconda-img{
+  display: inline-block;
+}
+.cuore{
+  position: absolute;
+  top: 10px;
+  right: 0;
+  background-color: white;
+  padding: 10px;
+}
+.etichetta{
+  margin-left: 30px;
+  background-color: green;
+}
+.sconto{
+  background-color: red;
+}
+.sconto ,.etichetta{
+  font-size: 10px;
+  position: absolute;
+  color: white;
+  padding: 3px;
+  bottom: 8px;
+  left:0;
+}
+.testo-immagine h3{
+  font-size: 10px;
+}
+.titolo{
+  font-weight: bold;
+}
+.prezzo{
+  color: red;
+  font-size: 10px;
+  text-decoration: line-through;
+  
+}
+.prezzo::after{ 
+  content:"\20AC";
+  padding:2px;
+}
+.prezzo-scontato{
+  color: black;
+  font-size: 10px;
+}
+.prezzo-scontato::after{
+  content: "\20AC";
+  padding: 2px;
+}
